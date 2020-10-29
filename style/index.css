@@ -59,22 +59,36 @@ body{
     font-size:1.6rem;
     font-family: 'Monda', sans-serif;
     line-height:1.5;
+    text-align:center;
 }
 h1{
     font-family: 'Julius Sans One', sans-serif;
-    font-size:5rem;
+    font-size:7rem;
 }
 h2{
     font-family: 'Julius Sans One', sans-serif;
-    font-size:3rem;
+    font-size:4rem;
 }
 section{
     padding:4% 0;
     width:90%;
     margin:0 auto;
 }
+img{
+    width:15%;
+}
+
+/*header styles*/
+header{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
 nav{
     padding:2% 0;
+    width:30%;
+    text-align:center;
 }
 nav a{
     display:inline-block;
@@ -83,6 +97,22 @@ nav a{
     color:black;
     text-decoration:none;
 }
+
+/*intro section*/
+.intro{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/*imgContainer section*/
+/*mess with making this image a background image to make it not take up as much space*/
 .imgContainer{
     width:100%;
+}
+
+/*portfolio section*/
+.portfolio{
+    width:100%;
+    display:flex;
 }
