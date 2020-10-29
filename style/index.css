@@ -54,6 +54,7 @@ table {
 /*general styles*/
 html{
     font-size:62.5%;
+    margin:2%;
 }
 body{
     font-size:1.6rem;
@@ -86,7 +87,7 @@ header{
     align-items:center;
 }
 nav{
-    padding:2% 0;
+    padding:1% 0;
     width:30%;
     text-align:center;
 }
@@ -98,21 +99,38 @@ nav a{
     text-decoration:none;
 }
 
-/*intro section*/
+/*intro section styles*/
 .intro{
     display:flex;
     flex-direction:column;
     align-items:center;
 }
 
-/*imgContainer section*/
+/*imgContainer section styles*/
 /*mess with making this image a background image to make it not take up as much space*/
 .imgContainer{
     width:100%;
 }
 
-/*portfolio section*/
+/*portfolio section styles*/
 .portfolio{
     width:100%;
     display:flex;
+    justify-content:space-between;
+    align-content:center;
+}
+.portfolio div{
+    width:30%;
+}
+div p{
+    width:60%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/*footer styles*/
+footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
