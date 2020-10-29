@@ -155,7 +155,3 @@ footer{
     align-items:center;
     background-color:#d8b341;
 }
-.footer a{
-    display:flex;
-    flex-direction:column;
-}
