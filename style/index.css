@@ -48,7 +48,6 @@ table {
 *{
     box-sizing:border-box;
     max-width:100%;
-    border:1px solid red;
 }
 
 /*general styles*/
@@ -195,16 +194,12 @@ footer{
         text-align:center;
         display:flex;
         flex-direction:column;
+        justify-content:center;
     }
     nav a{
         display:inline-block;
         text-align:center;
         padding:1% 0;
-        color:black;
-        text-decoration:none;
-        background-color:#9099dd;
-        border:1px solid black;
-        border-radius:10%;
     }
 
     /*intro section styles*/
@@ -224,12 +219,12 @@ footer{
     .portfolio{
         width:100%;
         display:flex;
-        justify-content:space-between;
-        align-content:center;
-        color:#749b7b;
+        flex-flow:row wrap;
+        justify-content:space-evenly;
+        align-items:center;
     }
     .portfolio div{
-        width:30%;
+        width:100%;
         display:flex;
         justify-content:center;
         align-items:center;
@@ -239,14 +234,89 @@ footer{
         width:60%;
     }
     .portfolio img{
+        width:40%;
         object-fit:scale-down;
     }
+}/*closing media query bracket*/
 
-    /*footer styles*/
-    footer{
+
+
+
+
+
+
+
+
+
+
+@media(max-width:500px){
+    /*general styles*/
+    h1{
+        font-size:4rem;
+    }
+    h2{
+        font-size:3rem;
+    }
+    .portfolio img{
+        width:15%;
+    }
+
+    /*header styles*/
+    header{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items:center;
+        background-color:#45334b;
+        border:thick double #9099dd;
+    }
+    nav{
+        padding:1% 0;
+        width:auto;
+        text-align:center;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    nav a{
+        display:inline-block;
+        text-align:center;
+        padding:1% 0;
+    }
+
+    /*intro section styles*/
+    .intro{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        color:#e77ea8;
+    }
+
+    /*imgContainer section styles*/
+    .imgContainer{
+        width:100%;
+    }
+
+    /*portfolio section styles*/
+    .portfolio{
+        width:100%;
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:space-evenly;
+        align-items:center;
+    }
+    .portfolio div{
+        width:100%;
         display:flex;
         justify-content:center;
         align-items:center;
-        background-color:#d8b341;
+        flex-wrap:wrap;
+    }
+    div{
+        width:60%;
+    }
+    .portfolio img{
+        width:40%;
+        object-fit:scale-down;
     }
 }/*closing media query bracket*/
